@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Flights</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Book a Flight</h1>
+    <form id="flightsForm">
+        <label for="flightFrom">From:</label>
+        <input type="text" id="flightFrom" name="flightFrom"><br>
+        <label for="flightTo">To:</label>
+        <input type="text" id="flightTo" name="flightTo"><br>
+        <label for="flightDates">Dates:</label>
+        <input type="text" id="flightDates" name="flightDates"><br>
+        <button type="button" onclick="bookFlight()">Book Now</button>
+    </form>
+    <button onclick="navigateTo('index.html')">Back to Main</button>
+
+    <script type="module">
+        import { bookFlight, navigateTo } from './js/script.js';
+        window.bookFlight = bookFlight;
+        window.navigateTo = navigateTo;
+    </script>
+</body>
+</html>

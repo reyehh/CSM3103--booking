@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking App</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to the Booking App</h1>
+    <button onclick="navigateTo('stays.html')">Book Stays</button>
+    <button onclick="navigateTo('flights.html')">Book Flights</button>
+    <button onclick="navigateTo('car_rental.html')">Book Car Rental</button>
+
+    <script type="module">
+        import { navigateTo } from './js/script.js';
+        window.navigateTo = navigateTo;
+    </script>
+</body>
+</html>

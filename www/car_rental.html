@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Car Rental</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Book a Car Rental</h1>
+    <form id="carRentalForm">
+        <label for="carLocation">Location:</label>
+        <input type="text" id="carLocation" name="carLocation"><br>
+        <label for="carDates">Dates:</label>
+        <input type="text" id="carDates" name="carDates"><br>
+        <button type="button" onclick="bookCar()">Book Now</button>
+    </form>
+    <button onclick="navigateTo('index.html')">Back to Main</button>
+
+    <script type="module">
+        import { bookCar, navigateTo } from './js/script.js';
+        window.bookCar = bookCar;
+        window.navigateTo = navigateTo;
+    </script>
+</body>
+</html>

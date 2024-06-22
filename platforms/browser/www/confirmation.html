@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <p id="confirmationMessage"></p>
+    <button onclick="navigateTo('index.html')">Back to Main</button>
+
+    <script type="module">
+        import { navigateTo } from './js/script.js';
+        window.navigateTo = navigateTo;
+    </script>
+</body>
+</html>

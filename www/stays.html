@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Stays</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Book a Stay</h1>
+    <form id="staysForm">
+        <label for="stayLocation">Location:</label>
+        <input type="text" id="stayLocation" name="stayLocation"><br>
+        <label for="stayDates">Dates:</label>
+        <input type="text" id="stayDates" name="stayDates"><br>
+        <button type="button" onclick="bookStay()">Book Now</button>
+    </form>
+    <button onclick="navigateTo('index.html')">Back to Main</button>
+
+    <script type="module">
+        import { bookStay, navigateTo } from './js/script.js';
+        window.bookStay = bookStay;
+        window.navigateTo = navigateTo;
+    </script>
+</body>
+</html> 
